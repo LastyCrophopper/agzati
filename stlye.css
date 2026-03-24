@@ -1,0 +1,36 @@
+main{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "h h"
+                        "as ar"
+                        "f f";
+}
+
+header{
+    grid-area: h;
+}
+article{
+    grid-area: ar;
+}
+aside{
+    grid-area: as;
+}
+footer{
+    grid-area: f;
+ 
+}
+
+@media screen and (max-width: 800px) {
+    main{
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "h"
+                            "as"
+                            "ar"
+                            "f";
+                           
+    }
+     
+    }
+    
+
